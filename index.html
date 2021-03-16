@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="index.css" type='text/css' media='screen' rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Text-Encryptor</title>
+</head>
+
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="row justify-content-lg-stretch justify-content-sm-stretch ">
+            <div class="col-lg-12 col-sm-12 p-0 ">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        data-bs-whatever="@mdo">About</a>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Introduction</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Hi🙋‍♂️, This is a Text Encryption🔐 tool. For Encryption🔐, You
+                                                    need to Enter a digit
+                                                    as the
+                                                    encryption key🗝️ for your text and with the same key🗝️, you can
+                                                    decrypt🔓 your text.
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Find Me
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item"
+                                                href="https://www.linkedin.com/in/anubhav-verma-88737b168"
+                                                target="_blank">LinkedIN</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="https://anubhav-verma.github.io/portfolio/"
+                                                target="_blank">My Portfolio</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row" style="height: 10px;"></div>
+        <div class="row justify-content-lg-center">
+            <div class="card text-white bg-secondary mb-3 col-lg-5 col-12 col-sm-12"
+                style="max-width: auto; height: 300px;">
+                <div class="card-header">Enter your text here</div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <textarea class="form-control" id="userText" rows="8"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-lg-center  ">
+            <div class="col-lg-5 col-12 col-sm-12 mb-3  ">
+                <input type="number" class="form-control mb-2 " placeholder="Key" aria-label="Username"
+                    style="max-width: 78px;" id="key">
+                <button type="button" class="btn btn-primary" onclick="encrypt()">Encrypt</button>
+                <button type="button" class="btn btn-success" onclick="decrypt()">Decrypt</button>
+                <button type="button" class="btn btn-secondary" onclick="location.reload()">Reset</button>
+            </div>
+        </div>
+        <div class="row justify-content-lg-center  "></div>
+        <div class="row justify-content-lg-center ">
+            <div class="card text-white bg-secondary mb-3 col-lg-5 col-12 col-sm-12"
+                style="max-width: auto; height: 300px;">
+                <div class="card-header">Converted Text</div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <textarea class="form-control" id="output" rows="8"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+</body>
+
+</html>
